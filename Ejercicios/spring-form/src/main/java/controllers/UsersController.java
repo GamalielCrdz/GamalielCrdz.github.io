@@ -16,9 +16,9 @@ import entity.UsersRepository;
 
 @Controller
 public class UsersController extends WebMvcConfigurerAdapter {
-	@Autowired
 	
-	private UsersRepository userRepository;
+	@Autowired
+	private UsersRepository usersRepository;
 	
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
@@ -27,7 +27,7 @@ public class UsersController extends WebMvcConfigurerAdapter {
 
     @GetMapping("/")
     public String showForm(Users personForm) {
-    	userRepository.save(personForm);
+    	usersRepository.save(personForm);
         return "form";
     }
 

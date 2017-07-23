@@ -1,9 +1,9 @@
-package services;
+package com.applicacion.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import entities.Usuarios;
-import repository.UsuariosRepositories;
+import com.applicacion.entities.Usuarios;
+import com.applicacion.repository.UsuariosRepositories;
 
 public class UsersServicesImplement implements UserServices {
 	

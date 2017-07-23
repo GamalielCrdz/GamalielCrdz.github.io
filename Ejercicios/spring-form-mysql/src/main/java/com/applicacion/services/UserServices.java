@@ -1,6 +1,6 @@
-package services;
+package com.applicacion.services;
 
-import entities.Usuarios;
+import com.applicacion.entities.Usuarios;
 
 public interface UserServices {
 	

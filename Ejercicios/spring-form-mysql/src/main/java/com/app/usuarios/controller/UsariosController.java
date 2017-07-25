@@ -1,25 +1,13 @@
-package hello;
+package com.app.usuarios.controller;
 
 
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-import org.thymeleaf.context.Context;
-import org.thymeleaf.context.IContext;
-import org.thymeleaf.context.WebContext;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.swing.text.AbstractDocument.Content;
+import com.app.usuarios.entity.Usuarios;
+import com.app.usuarios.services.UserServices;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

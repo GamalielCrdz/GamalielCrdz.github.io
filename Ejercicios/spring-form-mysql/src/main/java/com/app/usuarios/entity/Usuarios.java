@@ -1,4 +1,4 @@
-package hello;
+package com.app.usuarios.entity;
 
 import javax.persistence.*;
 

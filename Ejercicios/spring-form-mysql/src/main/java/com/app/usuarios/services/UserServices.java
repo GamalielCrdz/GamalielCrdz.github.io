@@ -1,6 +1,6 @@
-package hello;
+package com.app.usuarios.services;
 
-import java.util.List;
+import com.app.usuarios.entity.Usuarios;
 
 public interface UserServices {
 	

@@ -17,13 +17,12 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 task buildDocker(type: Docker, dependsOn: build) {
-  push = true
   applicationName = jar.baseName
   dockerfile = file('Dockerfile')
   doFirst {
     copy {
       from jar
-      into "build/docker/target"
+      into "${stageDir}/target"
     }
   }
 }

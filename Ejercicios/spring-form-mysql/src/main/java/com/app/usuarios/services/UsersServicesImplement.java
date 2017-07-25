@@ -1,9 +1,10 @@
-package hello;
+package com.app.usuarios.services;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.app.usuarios.entity.Usuarios;
 
 @Service
 public class UsersServicesImplement implements UserServices {

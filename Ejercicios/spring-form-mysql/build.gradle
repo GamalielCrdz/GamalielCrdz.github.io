@@ -23,12 +23,16 @@ task buildDocker(type: Docker, dependsOn: build) {
     copy {
       from jar
       into "${stageDir}/target"
+    
+    
     }
   }
 }
 
+
+
 jar {
-    baseName = 'gs-accessing-data-mysql'
+    baseName = 'gs-accessing-data-mysql-thymeleaf'
     version =  '0.1.0'
 }
 
@@ -49,7 +53,7 @@ dependencies {
 	
     // Use MySQL Connector-J
     compile("mysql:mysql-connector-java")
-    compile("org.apache.tomcat.embed:tomcat-embed-el")
+
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

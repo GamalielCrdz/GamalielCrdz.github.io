@@ -30,16 +30,13 @@ public class UsariosController{
 		model.addAttribute("users", userServices.allUsers());
 		return "list";
 	}
-	
-	
+		
     @RequestMapping(path="/add", method= RequestMethod.GET)
 	public String addNewUser(Model model) {
 		model.addAttribute("users", new Usuarios());
 		return "form";
-
 	}
 	
-
 	@RequestMapping(value="results", method= RequestMethod.GET )
 	public String saveUser(Usuarios usuario) {
 		userServices.saveUser(usuario);
